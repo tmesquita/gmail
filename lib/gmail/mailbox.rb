@@ -55,7 +55,7 @@ module Gmail
         opts[:subject]        and search.concat ['SUBJECT', opts[:subject]]
         opts[:label]          and search.concat ['LABEL', opts[:label]]
         opts[:attachment]     and search.concat ['HAS', 'attachment']
-        opts[:advance_search] and search.concat ['X-GM-RAW', opts[:advance_search]]
+        opts[:advanced_search] and search.concat ['X-GM-RAW', opts[:advanced_search]]
         opts[:search]         and search.concat ['BODY', opts[:search]]
         opts[:body]           and search.concat ['BODY', opts[:body]]
         opts[:query]          and search.concat opts[:query]
